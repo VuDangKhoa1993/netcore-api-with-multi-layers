@@ -1,0 +1,31 @@
+﻿using Microsoft.EntityFrameworkCore;
+using MyMusic.Core.Models;
+using MyMusic.Core.Repositories;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyMusic.Data.Repositories
+{
+    public class MusicRepository : BaseRepository<Music>, IMusicRepository
+    {
+        public MusicRepository(MyMusicDbContext context) : base(context) { }
+
+        public async Task<IEnumerable<Music>> GetAllWithArtistAsync()
+        {
+            return await _context.Musics.Include(m => m.Artist).ToListAsync();
+        }
+
+        public async Task<IEnumerable<Music>> GetAllWithArtistByArtistIdAsync(int artistId)
+        {
+            return await _context.Musics.Include(m => m.Artist).Where(m => m.ArtistId == artistId).ToListAsync();
+        }
+
+        public async Task<Music> GetWithArtistByIdAsync(int id)
+        {
+            return await _context.Musics.Include(m => m.Artist).SingleOrDefaultAsync(m => m.Id == id);
+        }
+    }
+}
