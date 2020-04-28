@@ -1,0 +1,11 @@
+C:\projects\netcore-api-with-multi-layers\MyMusic.Data\bin\Debug\netstandard2.0\MyMusic.Data.deps.json
+C:\projects\netcore-api-with-multi-layers\MyMusic.Data\bin\Debug\netstandard2.0\MyMusic.Data.dll
+C:\projects\netcore-api-with-multi-layers\MyMusic.Data\bin\Debug\netstandard2.0\MyMusic.Data.pdb
+C:\projects\netcore-api-with-multi-layers\MyMusic.Data\bin\Debug\netstandard2.0\MyMusic.Core.dll
+C:\projects\netcore-api-with-multi-layers\MyMusic.Data\bin\Debug\netstandard2.0\MyMusic.Core.pdb
+C:\projects\netcore-api-with-multi-layers\MyMusic.Data\obj\Debug\netstandard2.0\MyMusic.Data.csprojAssemblyReference.cache
+C:\projects\netcore-api-with-multi-layers\MyMusic.Data\obj\Debug\netstandard2.0\MyMusic.Data.AssemblyInfoInputs.cache
+C:\projects\netcore-api-with-multi-layers\MyMusic.Data\obj\Debug\netstandard2.0\MyMusic.Data.AssemblyInfo.cs
+C:\projects\netcore-api-with-multi-layers\MyMusic.Data\obj\Debug\netstandard2.0\MyMusic.Data.csproj.CopyComplete
+C:\projects\netcore-api-with-multi-layers\MyMusic.Data\obj\Debug\netstandard2.0\MyMusic.Data.dll
+C:\projects\netcore-api-with-multi-layers\MyMusic.Data\obj\Debug\netstandard2.0\MyMusic.Data.pdb

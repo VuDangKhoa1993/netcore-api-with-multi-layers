@@ -11,8 +11,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using MyMusic.Core.Repositories;
 using MyMusic.Data;
+using MyMusic.Services;
 
 namespace MyMusic.API
 {
@@ -30,9 +32,16 @@ namespace MyMusic.API
         {
             services.AddControllers();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IMusicService, MusicService>();
+            services.AddScoped<IArtistService, ArtistService>();
             services.AddDbContext<MyMusicDbContext>(options =>
             {
                 options.UseSqlServer(Configuration.GetConnectionString("Default"), x => x.MigrationsAssembly("MyMusic.Data"));
+            });
+
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo { Title = "My Music", Version = "v1" });
             });
         }
 
@@ -45,6 +54,14 @@ namespace MyMusic.API
             }
 
             app.UseHttpsRedirection();
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.RoutePrefix = "";
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Music v1");
+            });
 
             app.UseRouting();
 

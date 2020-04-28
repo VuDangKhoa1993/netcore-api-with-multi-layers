@@ -1,0 +1,8 @@
+C:\projects\netcore-api-with-multi-layers\MyMusic.Core\bin\Debug\netstandard2.0\MyMusic.Core.deps.json
+C:\projects\netcore-api-with-multi-layers\MyMusic.Core\bin\Debug\netstandard2.0\MyMusic.Core.dll
+C:\projects\netcore-api-with-multi-layers\MyMusic.Core\bin\Debug\netstandard2.0\MyMusic.Core.pdb
+C:\projects\netcore-api-with-multi-layers\MyMusic.Core\obj\Debug\netstandard2.0\MyMusic.Core.csprojAssemblyReference.cache
+C:\projects\netcore-api-with-multi-layers\MyMusic.Core\obj\Debug\netstandard2.0\MyMusic.Core.AssemblyInfoInputs.cache
+C:\projects\netcore-api-with-multi-layers\MyMusic.Core\obj\Debug\netstandard2.0\MyMusic.Core.AssemblyInfo.cs
+C:\projects\netcore-api-with-multi-layers\MyMusic.Core\obj\Debug\netstandard2.0\MyMusic.Core.dll
+C:\projects\netcore-api-with-multi-layers\MyMusic.Core\obj\Debug\netstandard2.0\MyMusic.Core.pdb
